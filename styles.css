@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('supermoto.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.header {
+    background-color: #573ede;
+    padding: 20px;
+    color: white;
+}
+
+/* Logo Box with White Background */
+.logo-box {
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.logo-box img {
+    display: block;
+    width: 450px;
+    height: auto;
+}
+
+.products, .services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.product, .service {
+    background-color: #321e9e;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product:hover, .service:hover {
+    transform: scale(1.05);
+}
+
+.product img, .service img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.promo {
+    background-color: #573ede;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* Popup Styling */
+.popup, .popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #321e9e;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #573ede;
+}
